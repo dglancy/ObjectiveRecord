@@ -45,7 +45,7 @@
 
 - (void)reset {
     for (NSPersistentStore *store in self.persistentStoreCoordinator.persistentStores) {
-        NSURL *url = [manager.persistentStoreCoordinator URLForPersistentStore:store];
+        NSURL *url = [self.persistentStoreCoordinator URLForPersistentStore:store];
         [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
     }
 	

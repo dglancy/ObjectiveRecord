@@ -37,6 +37,7 @@
 
 - (BOOL)saveContext;
 - (void)useInMemoryStore;
+- (void)reset;
 
 #pragma mark - Helpers
 
